@@ -1,6 +1,9 @@
 # -*- coding: utf8 -*-
 import os
-
+import pytz
+from datetime import datetime
+utc = pytz.UTC
+now_utc = datetime.now(tz=utc)
 from util import push_util
 from util import aes_help
 
